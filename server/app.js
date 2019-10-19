@@ -15,7 +15,6 @@ if(cache.url === req.query.i){
 res.send(cache.data);
 }
 
-// When making calls to the OMDB API make sure to append the '&apikey=8730e0e' parameter
 axios
  .get('http://www.omdbapi.com/?i=' + req.query.i + '&apikey=8730e0e')
  .then(response => {   
